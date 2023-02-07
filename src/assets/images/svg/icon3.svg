@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3508" height="2480" viewBox="0 0 3508 2480">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 0;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 8.333px;
+      }
+    </style>
+  </defs>
+  <path id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-1" d="M2627.79,2022.12c-11.29,1.54-21.62-6.9-23.08-18.86s6.52-22.9,17.8-24.45,21.62,6.9,23.08,18.86S2639.08,2020.57,2627.79,2022.12Z"/>
+  <path id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-1" d="M2747.1,2013.4c-11.29,1.54-21.62-6.9-23.08-18.86s6.52-22.9,17.8-24.45,21.62,6.9,23.08,18.86S2758.39,2011.86,2747.1,2013.4Z"/>
+  <path id="Shape_2_copy" data-name="Shape 2 copy" class="cls-2" d="M2859.47,2035.99s-166.81,199.85-341.42,8.72"/>
+</svg>
