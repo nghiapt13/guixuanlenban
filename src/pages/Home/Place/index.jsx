@@ -96,7 +96,7 @@ export default function Place({ id }) {
           }}
           data-aos="fade-up"
         >
-          Places
+          {t('content.places')}
         </Typography>
         <Wrapper data-aos="fade-up">
           {/* left */}

@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -169,7 +170,7 @@ function Donate({ id }) {
                     <Countup start={0} end={70} duration={2}></Countup>
                   )) ||
                     70} */}
-               {t('content.donation__money')}
+                {t('content.donation__money')}
               </Typography>
               {/* </ScrollTrigger> */}
               <Typography variant="p">
@@ -210,20 +211,22 @@ function Donate({ id }) {
               </Typography>
             </Box>
             <Box>
-              <button
-                className={cx('learn-more')}
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <span className={cx('circle')} aria-hidden="true">
-                  <span className={cx('icon')}>
-                    <i className="fa-solid fa-angle-right"></i>
+              <Link to="/gallery">
+                <button
+                  className={cx('learn-more')}
+                  data-aos="fade-up"
+                  data-aos-delay="500"
+                >
+                  <span className={cx('circle')} aria-hidden="true">
+                    <span className={cx('icon')}>
+                      <i className="fa-solid fa-angle-right"></i>
+                    </span>
                   </span>
-                </span>
-                <span className={cx('button-text')}>
-                  {t('content.btn_about_us')}
-                </span>
-              </button>
+                  <span className={cx('button-text')}>
+                    {t('content.btn_about_us')}
+                  </span>
+                </button>
+              </Link>
             </Box>
           </Box>
           {/* BOTTOM */}

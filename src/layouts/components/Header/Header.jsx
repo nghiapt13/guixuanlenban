@@ -106,21 +106,6 @@ function Header({ pages, id }) {
           >
             <Image src={images.btecLogo} alt="BTEC FPT" />
           </Typography>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            target={'_blank'}
-            href="https://www.facebook.com/bitc.club"
-            sx={{
-              display: { xs: 'none', md: 'flex' },
-              color: 'inherit',
-              minWidth: '80px',
-              maxWidth: '200px',
-            }}
-          >
-            <Image src={images.bitcLogo} alt="BITC" />
-          </Typography>
           {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', lg: 'flex' } }}></Box> */}
 
           {/* RESPONSIVE */}
@@ -160,7 +145,7 @@ function Header({ pages, id }) {
               maxWidth: '100px',
             }}
           >
-            <Image src={images.bitcLogo} alt="BTEC FPT" />
+            <Image src={images.btecLogo} alt="BTEC FPT" />
           </Typography>
 
           {/* MENU ON DESKTOP */}
