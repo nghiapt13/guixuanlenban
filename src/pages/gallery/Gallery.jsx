@@ -91,6 +91,7 @@ const Gallery = ({ galleryImages }) => {
                 {
                     galleryImages && galleryImages.map((slide, index) => {
                         return (
+                        
                             <div
                                 className='single'
                                 key={index}

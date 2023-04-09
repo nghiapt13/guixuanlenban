@@ -95,8 +95,8 @@ function Header({ pages, id }) {
             variant="h6"
             noWrap
             component="a"
-            target={'_blank'}
-            href="https://btec.edu.vn/"
+            // target={'_blank'}
+            href="#"
             sx={{
               display: { xs: 'none', md: 'flex' },
               color: 'inherit',
@@ -199,6 +199,7 @@ function Header({ pages, id }) {
               target="_blank"
               variant="outlined"
               color="inherit"
+              cursor="not-allowed"
               className={cx('btn__primary')}
               sx={{
                 display: { xs: 'none', sm: 'block' },
