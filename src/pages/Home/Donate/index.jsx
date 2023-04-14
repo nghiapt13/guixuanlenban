@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
-import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 
@@ -211,12 +210,14 @@ function Donate({ id }) {
               </Typography>
             </Box>
             <Box>
-              <Link to="/gallery">
-                <button
-                  className={cx('learn-more')}
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                >
+              <a
+                href="https://www.facebook.com/GuiXuanLenBan/posts/pfbid05FwzSv9aGa3mLVzeivjB1VzfJraTKSRF7T82VG3QM8Mb421dNs9Mb1Q7PmXf2u2kl"
+                target="_blank"
+                rel="noreferrer"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <button className={cx('learn-more')}>
                   <span className={cx('circle')} aria-hidden="true">
                     <span className={cx('icon')}>
                       <i className="fa-solid fa-angle-right"></i>
@@ -226,7 +227,7 @@ function Donate({ id }) {
                     {t('content.btn_about_us')}
                   </span>
                 </button>
-              </Link>
+              </a>
             </Box>
           </Box>
           {/* BOTTOM */}

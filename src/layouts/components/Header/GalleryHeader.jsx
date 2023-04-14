@@ -143,7 +143,7 @@ function GalleryHeader() {
                     {/* RIGHT */}
                     <Box sx={{ flexGrow: 0, display: 'flex', alignItems: 'center' }}>
                         <Box
-                            sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}
+                            sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center',pointerEvents: 'none', opacity: 1 }}
                         >
                             {/* PHONE */}
                             <a href="tel:0988520893">
@@ -192,6 +192,8 @@ function GalleryHeader() {
                             sx={{
                                 display: { xs: 'none', sm: 'block' },
                                 border: 2,
+                                cursor: 'not-allowed',
+                                pointerEvents: 'none', opacity: 1,
                                 borderColor: 'var(--primary)',
                                 ':hover': {
                                     border: 2,

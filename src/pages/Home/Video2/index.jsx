@@ -6,14 +6,12 @@ import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
 import TypeIt from 'typeit-react';
-import { Link } from 'react-router-dom';
 // import language
 import { useTranslation } from 'react-i18next';
 
 const cx = classNames.bind(styles);
 
-function Thuvien({ id }) {
-    window.scrollTo(0, 0);
+function Video2({ id }) {
     const MyBox = styled(Box)(({ theme }) => ({
         display: 'flex',
         flexDirection: 'column',
@@ -27,7 +25,7 @@ function Thuvien({ id }) {
             maxWidth="xl"
             // disableGutters={true}
             sx={{
-                display: 'grid',
+                // display: 'grid',
                 justifyContent: 'center', alignItems: 'center',
                 gridTemplateColumns: {
                     xs: 'repeat(1, 1fr)',
@@ -67,56 +65,33 @@ function Thuvien({ id }) {
                             waitUntilVisible: true,
                         }}
                     >
-                        {t('content.gallery')}
+                        {t('content.video2')}
                     </TypeIt>
                 </Typography>
                 <Typography
                     variant="p"
                     sx={{
-                        textAlign: 'justify',
+                        textAlign: 'center',
                         lineHeight: 2,
+                        marginBottom: '30px',
                     }}
                     data-aos="fade-up"
                     data-aos-delay="500"
                 >
-                    {t('content.about_us_desc')}
+                    {t('content.video2__desc4')}
                 </Typography>
-
-                <Link to="/gallery">
-                    <button
-                        className={cx('learn-more')}
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                    >
-                        <span className={cx('circle')} aria-hidden="true">
-                            <span className={cx('icon')}>
-                                <i className="fa-solid fa-angle-right"></i>
-                            </span>
-                        </span>
-                        <span className={cx('button-text')}>
-                            {t('content.btn_about_us')}
-                        </span>
-                    </button>
-                </Link>
+                <iframe
+                    src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2FFEExpSpace%2Fvideos%2F889724542134037%2F&amp;show_text=false&amp;width=560&amp;t=0"
+                    width="660"
+                    height="415"
+                    style={{ border: 'none', overflow: 'hidden' }}
+                    allowFullScreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
             </MyBox>
-
-            {/* RIGHT */}
-            <Box
-                data-aos="fade-up"
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '100vh',
-                }}
-            >
-                <Image src={images.gallery} alt="" className={cx('about__image')} />
-                {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
-            </Box>
         </Container>
     );
 }
-Thuvien.propTypes = {};
+Video2.propTypes = {};
 
-export default Thuvien;
+export default Video2;

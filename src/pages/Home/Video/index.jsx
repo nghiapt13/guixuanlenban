@@ -6,14 +6,12 @@ import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
 import TypeIt from 'typeit-react';
-import { Link } from 'react-router-dom';
 // import language
 import { useTranslation } from 'react-i18next';
 
 const cx = classNames.bind(styles);
 
-function Thuvien({ id }) {
-    window.scrollTo(0, 0);
+function Video({ id }) {
     const MyBox = styled(Box)(({ theme }) => ({
         display: 'flex',
         flexDirection: 'column',
@@ -27,7 +25,7 @@ function Thuvien({ id }) {
             maxWidth="xl"
             // disableGutters={true}
             sx={{
-                display: 'grid',
+                // display: 'grid',
                 justifyContent: 'center', alignItems: 'center',
                 gridTemplateColumns: {
                     xs: 'repeat(1, 1fr)',
@@ -67,7 +65,7 @@ function Thuvien({ id }) {
                             waitUntilVisible: true,
                         }}
                     >
-                        {t('content.gallery')}
+                        {t('content.video')}
                     </TypeIt>
                 </Typography>
                 <Typography
@@ -75,48 +73,26 @@ function Thuvien({ id }) {
                     sx={{
                         textAlign: 'justify',
                         lineHeight: 2,
+                        marginBottom: '30px',
                     }}
                     data-aos="fade-up"
                     data-aos-delay="500"
                 >
-                    {t('content.about_us_desc')}
+                    {t('content.video__desc')}
                 </Typography>
-
-                <Link to="/gallery">
-                    <button
-                        className={cx('learn-more')}
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                    >
-                        <span className={cx('circle')} aria-hidden="true">
-                            <span className={cx('icon')}>
-                                <i className="fa-solid fa-angle-right"></i>
-                            </span>
-                        </span>
-                        <span className={cx('button-text')}>
-                            {t('content.btn_about_us')}
-                        </span>
-                    </button>
-                </Link>
+                <iframe
+                    width="660"
+                    height="415"
+                    src="https://www.youtube.com/embed/JaUzv3SmNBI"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
             </MyBox>
-
-            {/* RIGHT */}
-            <Box
-                data-aos="fade-up"
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '100vh',
-                }}
-            >
-                <Image src={images.gallery} alt="" className={cx('about__image')} />
-                {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
-            </Box>
         </Container>
     );
 }
-Thuvien.propTypes = {};
+Video.propTypes = {};
 
-export default Thuvien;
+export default Video;

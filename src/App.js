@@ -56,9 +56,6 @@ function App() {
       img: 'https://i.ibb.co/hLBjf6H/MG-2205-min.jpg'
     },
     {
-      img: 'https://i.ibb.co/R9vdGQQ/MG-2220-min.jpg'
-    },
-    {
       img: 'https://i.ibb.co/fDp7FcK/IMG-0893-min.jpg'
     },
     {
@@ -66,6 +63,9 @@ function App() {
     },
     {
       img: 'https://i.ibb.co/dW2yG2c/IMG-0852-min.jpg'
+    },
+    {
+      img:'https://i.ibb.co/n8cqkh0/DSC-1202-min.jpg'
     },
     {
       img: 'https://i.ibb.co/3mgx0fn/DSC-1208-min.jpg'
@@ -176,7 +176,7 @@ function App() {
             }
           />
           <Route
-            path="*"
+            path="/"
             element={
               <DefaultLayout>
                 <Home />

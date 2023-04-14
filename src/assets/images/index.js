@@ -8,6 +8,7 @@ const images = {
   katkunstLogo: require('./logos/logo-katkunst.png'),
   katkunstLogo1: require('./logos/logo-katkunst1.png'),
   chuaLogo: require('./logos/logo-chua.png'),
+  glxbLogo: require('./logos/glxb.png'),
   // About
   about: require('./about/about.jpg'),
   brush: require('./about/brush.png'),
@@ -22,6 +23,9 @@ const images = {
   spring: require('./places/spring.jpg'),
   abat: require('./places/abat.jpg'),
   commingSoon: require('./places/comming-soon.jpg'),
+
+  // Gallery
+  gallery:require('./gallery/gallery.jpg'),
 
   // DONATE
   donate: require('./donate.jpg'),

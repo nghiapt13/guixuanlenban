@@ -12,7 +12,9 @@ import { convertUrl } from '../../hooks/convertUrl';
 import styles from './Home.module.scss';
 import Place from './Place';
 import Timeline from './Timeline';
-// import Gallery from './Gallery';
+import Thuvien from './Gallery';
+import Video from './Video';
+import Video2 from './Video2';
 // import Wish from './Wish';
 const cx = classNames.bind(styles);
 // DONOR, Organization, contributor data
@@ -74,7 +76,9 @@ function Home(props) {
   let hrefDonation = `${convertUrl(t('content.donation'))}`;
   let hrefSponsors = `${convertUrl(t('content.sponsors'))}`;
   let hrefPlaces = `${convertUrl(t('content.places'))}`;
-  // let hrefGallery = `${convertUrl(t('content.gallery'))}`;
+  let hrefThuvien= `${convertUrl(t('content.thuvien'))}`;
+  let hrefVideo = `${convertUrl(t('content.video'))}`;
+  let hrefVideo2 = `${convertUrl(t('content.video2'))}`;
   return (
     <Box className={cx('wrapper')}>
       {/* Banner */}
@@ -88,8 +92,11 @@ function Home(props) {
       {/* Timeline */}
       <Timeline id={hrefTimeline} />
       {/* Gallery */}
-      <About id={hrefAbout} />
-      {/* <Gallery id={hrefGallery} /> */}
+      <Thuvien id={hrefThuvien} />
+      {/* Video */}
+      <Video id={hrefVideo} />
+      {/* Video2 */}
+      <Video2 id={hrefVideo2} />
 
       <Box id={hrefSponsors} sx={{ pt: { sm: '100px', xs: '50px' } }}>
         {/* Nha Tai Tro - Donor */}
