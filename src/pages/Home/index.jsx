@@ -12,6 +12,7 @@ import { convertUrl } from '../../hooks/convertUrl';
 import styles from './Home.module.scss';
 import Place from './Place';
 import Timeline from './Timeline';
+// import Gallery from './Gallery';
 // import Wish from './Wish';
 const cx = classNames.bind(styles);
 // DONOR, Organization, contributor data
@@ -73,6 +74,7 @@ function Home(props) {
   let hrefDonation = `${convertUrl(t('content.donation'))}`;
   let hrefSponsors = `${convertUrl(t('content.sponsors'))}`;
   let hrefPlaces = `${convertUrl(t('content.places'))}`;
+  // let hrefGallery = `${convertUrl(t('content.gallery'))}`;
   return (
     <Box className={cx('wrapper')}>
       {/* Banner */}
@@ -85,6 +87,9 @@ function Home(props) {
       <Donate id={hrefDonation} />
       {/* Timeline */}
       <Timeline id={hrefTimeline} />
+      {/* Gallery */}
+      <About id={hrefAbout} />
+      {/* <Gallery id={hrefGallery} /> */}
 
       <Box id={hrefSponsors} sx={{ pt: { sm: '100px', xs: '50px' } }}>
         {/* Nha Tai Tro - Donor */}

@@ -37,80 +37,121 @@ function App() {
   // Set up ảnh cho gallery
   const galleryImages = [
     {
-      img: 'https://i.ibb.co/wKJG4Kt/MG-1255.jpg'
+      img: 'https://i.ibb.co/WBQ1j1r/MG-1580-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/qjLfGTT/MG-1260.jpg'
+      img: 'https://i.ibb.co/mh480SP/MG-1305-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/tCQP7k9/MG-1266.jpg'
+      img: 'https://i.ibb.co/XWQ944J/MG-1370-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/rdbzkHF/MG-1269.jpg'
+      img: 'https://i.ibb.co/Vxr2m9L/MG-1397-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/R4wvkBy/MG-1283.jpg'
+      img: 'https://i.ibb.co/hLBjf6H/MG-2205-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/R9vdGQQ/MG-2220-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/fDp7FcK/IMG-0893-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/jHb7w4h/DSC-1063-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/dW2yG2c/IMG-0852-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/3mgx0fn/DSC-1208-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/S0DkKS3/IMG-0872-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/fvqs6Kr/IMG-0896-min.jpg'
+    },
+    {
+      img: 'https://i.ibb.co/18hm5B4/MG-2410-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/bHxs4qK/MG-1288.jpg'
+      img: 'https://i.ibb.co/g6Dw7QZ/MG-1503-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/Ybpj2BB/MG-1274.jpg'
+      img: 'https://i.ibb.co/7xcgrJV/MG-1547-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/s6Z08vC/MG-1280.jpg'
+      img: 'https://i.ibb.co/tx4gfYL/MG-1481-min.jpg'
 
     },
     {
-      img: 'https://i.ibb.co/xfpfF5N/MG-1320.jpg'
-
+      img: 'https://i.ibb.co/1nH9VVp/MG-1714-min.jpg'
     },
     {
-      img: 'https://i.ibb.co/TbLNtsP/MG-1321.jpg'
+      img: 'https://i.ibb.co/ZfqFJWt/MG-1749-min.jpg'
     },
     {
-      img:'https://i.ibb.co/8gjhM9m/MG-1344.jpg'
+      img: 'https://i.ibb.co/GVvPh60/MG-1799-min.jpg'
     },
     {
-      img:'https://i.ibb.co/cXZnNx1/MG-1334.jpg'
+      img: 'https://i.ibb.co/FDgXfCw/MG-1873-min.jpg'
     },
     {
-      img:'https://i.ibb.co/6gJWH2b/MG-1385.jpg'
+      img: 'https://i.ibb.co/sC8NrQY/MG-1888-min.jpg'
     },
     {
-      img:'https://i.ibb.co/zGhqKHs/MG-1370.jpg'
+      img: 'https://i.ibb.co/Mgykzvt/MG-1899-min.jpg'
     },
     {
-      img:'https://i.ibb.co/Xydj4W5/MG-1388.jpg'
+      img: 'https://i.ibb.co/J2SHJ2s/MG-1892-min.jpg'
     },
     {
-      img:'https://i.ibb.co/J5GB0kk/MG-1392.jpg'
+      img: 'https://i.ibb.co/dD06Zbm/MG-1950-min.jpg'
     },
     {
-      img:'https://i.ibb.co/JrV7dWF/MG-1395.jpg'
+      img: 'https://i.ibb.co/kJfZBTF/MG-1925-min.jpg'
     },
     {
-      img:'https://i.ibb.co/6WQfL5x/MG-1408.jpg'
+      img:'https://i.ibb.co/7ysvzV5/MG-2116-min.jpg'
     },
     {
-      img:'https://i.ibb.co/2M7r1Nk/MG-1397.jpg'
+      img: 'https://i.ibb.co/wJyVCr2/MG-2415-min.jpg'
     },
     {
-      img:'https://i.ibb.co/S5KrZd8/MG-1405.jpg'
+      img: 'https://i.ibb.co/9vyVcnd/MG-2223-min.jpg'
     },
     {
-      img:'https://i.ibb.co/ZMwmrsZ/MG-1418.jpg'
+      img: 'https://i.ibb.co/xD0kCf6/MG-1560-min.jpg'
     },
     {
-      img:'https://i.ibb.co/dJzy5gY/DSC-1106.jpg'
+      img: 'https://i.ibb.co/PT2zWPK/MG-2379-min.jpg'
     },
+    {
+      img:'https://i.ibb.co/884XWvg/MG-2466-min.jpg'
+    },
+    {
+      img:'https://i.ibb.co/WtsJgX1/MG-2468-min.jpg'
+    },
+    {
+      img:'https://i.ibb.co/jyMQjdb/MG-2383-min.jpg'
+    },
+    {
+      img:'https://i.ibb.co/rkRD4q0/IMG-0838-min.jpg'
+    },
+    {
+      img:'https://i.ibb.co/KwMCDkF/MG-2561-min.jpg'
+    },
+    {
+      img:'https://i.ibb.co/b2jWRD0/MG-2592-min.jpg'
+    }
   ]
   return (
     <Router>

@@ -72,7 +72,7 @@ function About({ id }) {
         </Typography>
 
         <a
-          href="https://drive.google.com/file/d/1OvoGCjVcGkObRgL99ikz_DiH4_U69Ofc/view?fbclid=IwAR0jvhDGkIEK2RshhfM42ld-eog4H-YgfHkl5V3ogIMfkcXgmDUVnncY9dw"
+          href="https://www.facebook.com/GuiXuanLenBan/posts/pfbid02ucnmF7BrdmLythGDVjm4jNtVNJAuxkvMVnnrpwH8cUsv9tKMED5kdvbDbJu9TWm6l"
           target="_blank"
           rel="noreferrer"
           data-aos="fade-up"

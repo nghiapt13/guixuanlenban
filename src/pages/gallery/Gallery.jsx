@@ -70,6 +70,9 @@ const Gallery = ({ galleryImages }) => {
 
     return (
         <div>
+            <h3 className='title__h1'>Thư viện ảnh</h3>
+            <p className='desc'>Vậy là hành trình mang mùa xuân đến bản nhỏ đã đi qua, nhưng những kí ức của chương trình vẫn còn đây.</p>
+            <p className='desc'> Cùng chúng mình ôn lại những khoảnh khắc này nhé!</p>
             {openModal &&
                 <div className='sliderWrap'>
                     <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal} />
@@ -91,7 +94,7 @@ const Gallery = ({ galleryImages }) => {
                 {
                     galleryImages && galleryImages.map((slide, index) => {
                         return (
-                        
+
                             <div
                                 className='single'
                                 key={index}

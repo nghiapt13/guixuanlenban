@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .galleryWrap {
     display: flex;
     flex-wrap: wrap;
@@ -37,8 +39,8 @@
     height: 100%;
 }
 
-.sliderWrap .btnClose,
-.sliderWrap .btnPrev,
+.sliderWrap .btnClose ,
+.sliderWrap .btnPrev ,
 .sliderWrap .btnNext {
     position: fixed;
     cursor: pointer;
@@ -51,6 +53,26 @@
 .btnPrev:hover,
 .btnClose:hover {
     opacity: 1;
+}
+
+.title__h1{
+    color: #D32F2F;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    /* align-items: c; */
+    margin-bottom: 20px;
+}
+.desc{
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    /* padding: 1rem; */
+    font-family: 'Roboto', sans-serif;
+    /* align-items: c; */
+    margin-bottom: 20px;
 }
 
 .sliderWrap .btnClose {
