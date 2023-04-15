@@ -20,8 +20,8 @@ function DefaultLayout({ children }) {
     t('content.home'),
     t('content.about_us'),
     t('content.places'),
-    t('content.donation'),
-    t('content.timeline'),
+    t('content.gallery'),
+    t('content.video'),
     t('content.sponsors'),
   ];
   const context = React.useContext(ThemeContext);

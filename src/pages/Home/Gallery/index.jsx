@@ -5,7 +5,6 @@ import classNames from 'classnames/bind';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
-import TypeIt from 'typeit-react';
 import { Link } from 'react-router-dom';
 // import language
 import { useTranslation } from 'react-i18next';
@@ -55,20 +54,14 @@ function Thuvien({ id }) {
                     component="h5"
                     sx={{
                         py: 3,
-                        fontFamily: 'Dancing Script',
-                        height: '209px',
-                        fontSize: { xs: '45px', md: '70px' },
+                        fontFamily: 'Montserrat',
+                        height: '100px',
+                        fontSize: { xs: '35px', md: '41px' },
                         textAlign: 'center',
                         color: 'var(--primary)',
                     }}
                 >
-                    <TypeIt
-                        options={{
-                            waitUntilVisible: true,
-                        }}
-                    >
-                        {t('content.gallery')}
-                    </TypeIt>
+                    {t('content.gallery')}
                 </Typography>
                 <Typography
                     variant="p"
@@ -79,7 +72,7 @@ function Thuvien({ id }) {
                     data-aos="fade-up"
                     data-aos-delay="500"
                 >
-                    {t('content.about_us_desc')}
+                    {t('content.gallery_desc')}
                 </Typography>
 
                 <Link to="/gallery">

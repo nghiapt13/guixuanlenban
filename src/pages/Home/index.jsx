@@ -11,10 +11,8 @@ import { useTranslation } from 'react-i18next';
 import { convertUrl } from '../../hooks/convertUrl';
 import styles from './Home.module.scss';
 import Place from './Place';
-import Timeline from './Timeline';
-import Thuvien from './Gallery';
+import Gallery from './Gallery';
 import Video from './Video';
-import Video2 from './Video2';
 // import Wish from './Wish';
 const cx = classNames.bind(styles);
 // DONOR, Organization, contributor data
@@ -72,13 +70,10 @@ function Home(props) {
   const { t } = useTranslation();
 
   let hrefAbout = `${convertUrl(t('content.about_us'))}`;
-  let hrefTimeline = `${convertUrl(t('content.timeline'))}`;
-  let hrefDonation = `${convertUrl(t('content.donation'))}`;
   let hrefSponsors = `${convertUrl(t('content.sponsors'))}`;
   let hrefPlaces = `${convertUrl(t('content.places'))}`;
-  let hrefThuvien= `${convertUrl(t('content.thuvien'))}`;
+  let hrefGallery= `${convertUrl(t('content.gallery'))}`;
   let hrefVideo = `${convertUrl(t('content.video'))}`;
-  let hrefVideo2 = `${convertUrl(t('content.video2'))}`;
   return (
     <Box className={cx('wrapper')}>
       {/* Banner */}
@@ -87,16 +82,10 @@ function Home(props) {
       <About id={hrefAbout} />
       {/* PLACE */}
       <Place id={hrefPlaces} />
-      {/* Donate */}
-      <Donate id={hrefDonation} />
-      {/* Timeline */}
-      <Timeline id={hrefTimeline} />
       {/* Gallery */}
-      <Thuvien id={hrefThuvien} />
+      <Gallery id={hrefGallery} />
       {/* Video */}
       <Video id={hrefVideo} />
-      {/* Video2 */}
-      <Video2 id={hrefVideo2} />
 
       <Box id={hrefSponsors} sx={{ pt: { sm: '100px', xs: '50px' } }}>
         {/* Nha Tai Tro - Donor */}

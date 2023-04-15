@@ -83,16 +83,21 @@ function Footer({ pages }) {
                     width: {
                       md: '80%',
                     },
-                    marginBottom: '10px',
+                    // marginBottom: '0px',
                     display: { xs: 'flex', sm: 'block' },
                     justifyContent: 'center',
                   }}
                 >
                   <Image
-                    src={images.btecLogo}
+                    src={images.btecglxbLogo}
                     alt="logo"
                     className={cx('footer__image')}
                   ></Image>
+                  {/* <Image
+                    src={images.glxbLogo}
+                    alt="logo"
+                    className={cx('footer__image')}
+                  ></Image> */}
                 </Box>
                 <Typography
                   variant="span"

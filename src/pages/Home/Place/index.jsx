@@ -34,10 +34,10 @@ export default function Place({ id }) {
       imageUrl: images.laBo,
       title: t('content.places__school5'),
     },
-    {
-      imageUrl: images.commingSoon,
-      title: t('content.places__commingsoon'),
-    },
+    // {
+    //   imageUrl: images.commingSoon,
+    //   title: t('content.places__commingsoon'),
+    // },
   ];
 
   const Wrapper = styled(Box)(({ theme }) => ({
@@ -58,7 +58,7 @@ export default function Place({ id }) {
       gridTemplateColumns: 'repeat(2, 1fr)',
     },
     [theme.breakpoints.up('lg')]: {
-      gridTemplateColumns: 'repeat(3, 1fr)',
+      gridTemplateColumns: 'repeat(5, 1fr)',
       gap: 30,
     },
   }));
@@ -89,14 +89,14 @@ export default function Place({ id }) {
           variant="span"
           sx={{
             display: 'content',
-            fontFamily: 'Dancing Script',
-            height: '209px',
-            fontSize: { xs: '45px', md: '70px' },
+            fontFamily: 'Montserrat',
+            height: '100px',
+            fontSize: { xs: '35px', md: '41px' },
             color: 'var(--primary)',
           }}
           data-aos="fade-up"
         >
-          {t('content.places')}
+          {t('content.places2')}
         </Typography>
         <Wrapper data-aos="fade-up">
           {/* left */}

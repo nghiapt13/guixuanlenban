@@ -9,6 +9,7 @@ const images = {
   katkunstLogo1: require('./logos/logo-katkunst1.png'),
   chuaLogo: require('./logos/logo-chua.png'),
   glxbLogo: require('./logos/glxb.png'),
+  btecglxbLogo: require('./logos/btecglxb.png'),
   // About
   about: require('./about/about.jpg'),
   brush: require('./about/brush.png'),

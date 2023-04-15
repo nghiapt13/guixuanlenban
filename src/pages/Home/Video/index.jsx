@@ -5,7 +5,6 @@ import classNames from 'classnames/bind';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
-import TypeIt from 'typeit-react';
 // import language
 import { useTranslation } from 'react-i18next';
 
@@ -25,8 +24,7 @@ function Video({ id }) {
             maxWidth="xl"
             // disableGutters={true}
             sx={{
-                // display: 'grid',
-                justifyContent: 'center', alignItems: 'center',
+                display: 'grid',
                 gridTemplateColumns: {
                     xs: 'repeat(1, 1fr)',
                     lg: 'repeat(2, 1fr)',
@@ -36,14 +34,7 @@ function Video({ id }) {
             }}
         >
             {/* LEFT */}
-            <MyBox data-aos="fade-up"
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    // height: '100vh',
-                }}>
+            <MyBox data-aos="fade-up">
                 {/* <Typography
           variant="span"
           sx={{ textTransform: 'uppercase', color: 'orange' }}
@@ -53,33 +44,37 @@ function Video({ id }) {
                     component="h5"
                     sx={{
                         py: 3,
-                        fontFamily: 'Dancing Script',
-                        height: '209px',
-                        fontSize: { xs: '45px', md: '70px' },
-                        textAlign: 'center',
+                        fontFamily: 'Montserrat',
+                        height: '100px',
+                        fontSize: { xs: '35px', md: '41px' },
                         color: 'var(--primary)',
                     }}
                 >
-                    <TypeIt
-                        options={{
-                            waitUntilVisible: true,
-                        }}
-                    >
-                        {t('content.video')}
-                    </TypeIt>
+                    {t('content.video__title')}
                 </Typography>
                 <Typography
                     variant="p"
                     sx={{
                         textAlign: 'justify',
                         lineHeight: 2,
-                        marginBottom: '30px',
                     }}
                     data-aos="fade-up"
                     data-aos-delay="500"
                 >
                     {t('content.video__desc')}
                 </Typography>
+            </MyBox>
+
+            {/* RIGHT */}
+            <Box
+                data-aos="fade-up"
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-end',
+                    position: 'relative',
+                }}
+            >
                 <iframe
                     width="660"
                     height="415"
@@ -89,7 +84,8 @@ function Video({ id }) {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                 ></iframe>
-            </MyBox>
+                {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
+            </Box>
         </Container>
     );
 }

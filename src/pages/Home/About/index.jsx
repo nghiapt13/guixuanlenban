@@ -5,7 +5,6 @@ import classNames from 'classnames/bind';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
-import TypeIt from 'typeit-react';
 // import language
 import { useTranslation } from 'react-i18next';
 
@@ -45,19 +44,13 @@ function About({ id }) {
           component="h5"
           sx={{
             py: 3,
-            fontFamily: 'Dancing Script',
-            height: '209px',
-            fontSize: { xs: '45px', md: '70px' },
+            fontFamily: 'Montserrat',
+            height: '100px',
+            fontSize: { xs: '35px', md: '41px' },
             color: 'var(--primary)',
           }}
         >
-          <TypeIt
-            options={{
-              waitUntilVisible: true,
-            }}
-          >
-            {t('content.about_us_title')}
-          </TypeIt>
+          {t('content.about_us_title')}
         </Typography>
         <Typography
           variant="p"
@@ -101,38 +94,15 @@ function About({ id }) {
           position: 'relative',
         }}
       >
-        <Image
-          src={images.brush}
-          alt=""
-          className={cx('about__brush')}
-          data-aos="fade-up"
-          data-aos-delay="300"
-        />
-        <Image src={images.about} alt="" className={cx('about__image')} />
-
-        {/* QUOTES */}
-        <Paper
-          sx={{
-            position: 'absolute',
-            p: 3,
-            maxWidth: '300px',
-            left: { xs: '30%', sm: '50%', lg: '139px' },
-            bottom: { xs: '-30px', lg: '23px' },
-          }}
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <Typography
-            variant="p"
-            className={cx('quotes')}
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            {t('content.about_us_quote')}
-
-            <i className="fa-solid fa-quote-right"></i>
-          </Typography>
-        </Paper>
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2FFEExpSpace%2Fvideos%2F889724542134037%2F&amp;show_text=false&amp;width=560&amp;t=0"
+          width="660"
+          height="415"
+          zIndex="9999"
+          style={{ border: 'none', overflow: 'hidden' }}
+          allowFullScreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
         {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
       </Box>
     </Container>

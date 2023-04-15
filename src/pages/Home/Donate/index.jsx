@@ -117,7 +117,7 @@ function Donate({ id }) {
           variant="span"
           sx={{
             display: 'content',
-            fontFamily: 'Dancing Script',
+            fontFamily: 'Montserrat',
             height: '209px',
             fontSize: { xs: '45px', md: '70px' },
             color: 'var(--primary)',
