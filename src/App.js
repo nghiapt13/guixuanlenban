@@ -156,7 +156,7 @@ function App() {
   return (
     <Router>
       {loading ? (
-        <SyncLoader color="#d32f2fd6" cssOverride={override} />
+        <SyncLoader color="#3ec7f1" cssOverride={override} />
       ) : (
         <Routes>
           <Route

@@ -115,7 +115,7 @@ function Banner() {
           className={cx('banner-title')}
           data-aos="fade-up"
         >
-          Gùi Xuân
+          GÙI XUÂN
         </Typography>
         <Typography
           variant="h1"
@@ -123,7 +123,7 @@ function Banner() {
           className={cx('banner-title')}
           data-aos="fade-up"
         >
-          lên bản
+        LÊN BẢN
         </Typography>
       </Title>
       <img

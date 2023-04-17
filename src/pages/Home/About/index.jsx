@@ -46,7 +46,7 @@ function About({ id }) {
             py: 3,
             fontFamily: 'Montserrat',
             height: '100px',
-            fontSize: { xs: '35px', md: '41px' },
+            fontSize: { xs: '22px', md: '41px' },
             color: 'var(--primary)',
           }}
         >
@@ -55,8 +55,11 @@ function About({ id }) {
         <Typography
           variant="p"
           sx={{
-            textAlign: 'justify',
-            lineHeight: 2,
+            textAlign: { md: 'justify' },
+            alignItems: { xs: 'center', },
+            lineHeight: { xs: '2', md: '2' },
+            // pt: { md: 15, sm: 10, xs: 5 },
+            gap: { xs: 3, lg: 0 },
           }}
           data-aos="fade-up"
           data-aos-delay="500"
@@ -90,18 +93,20 @@ function About({ id }) {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'flex-end',
+          size: { xs: '50%', md: '100%' },
+          alignItems: { xs: 'center', md: 'flex-end' },
           position: 'relative',
+
         }}
       >
         <iframe
-          src="https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2FFEExpSpace%2Fvideos%2F889724542134037%2F&amp;show_text=false&amp;width=560&amp;t=0"
           width="660"
           height="415"
-          zIndex="9999"
-          style={{ border: 'none', overflow: 'hidden' }}
-          allowFullScreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          src="https://www.youtube.com/embed/IFVcRYMNxDc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>
         {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
       </Box>

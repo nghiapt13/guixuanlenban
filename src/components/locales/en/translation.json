@@ -3,10 +3,11 @@
     "home": "Home",
     "about_us": "About us",
     "about_us_title": "Bringing spring to remote villages",
-    "about_us_desc": "“GÙI XUÂN LÊN BẢN” is a project from the BTEC FPT British College campus Da Nang. With the desire towards the community, sharing difficulties with the children in the highlands, suffering and working hard, day by day clinging to the mountains and going long distances to go to school. Empathize with the difficult situation of the children, want to bring good things in life to the children, use their youth to give wings to their dreams; Instilling faith in good things, rekindling smiles, helping children have more energy to study, that's the reason why this volunteer project was carried out.",
+    "about_us_desc": "'GÙI XUÂN LÊN BẢN' is a volunteer project of BTEC FPT UK College in collaboration with Thach Khe Pagoda. After a 6-month journey of tirelessly collecting spring gifts, a group of 50 volunteers from the 'GÙI XUÂN LÊN BẢN' charity campaign traveled over 90km to bring warmth and joy to the Chà Val commune, Nam Giang district, Quang Nam province. The charity campaign is a deeply humanitarian activity that demonstrates the students' enthusiasm and willingness to volunteer for the community. Through volunteering, BTEC FPT students have the opportunity to gain new experiences, practice and learn new skills. They can contribute their energy and knowledge to community service activities.",
     "about_us_quote": "“Start from where you are. Use what you have. Do what you can.”",
     "btn_about_us": "Learn More",
     "places": "Places",
+    "placce2":"",
     "places__school1": "A Dinh School",
     "places__school2": "A Bat School",
     "places__school3": "Can Don School",
@@ -41,9 +42,12 @@
     "sponsors__title1": "Organizations",
     "sponsors__title2": "Our Partners",
     "btn_donation": "Donation Now",
-
-    "footer_title": "We're given, passionate and committed to helping nonprofits learn and grow",
+    "gallery": "Gallery",
+    "gallery_desc":"After a 6-month journey of tirelessly collecting spring gifts, a group of 50 volunteers from the GÙI XUÂN LÊN BẢN charity campaign traveled over 90km to bring warmth and joy to the Chà Val commune, Nam Giang district, Quang Nam province. The group visited one main school and 5 village schools to deliver their gifts. Let's take a look at the touching and meaningful photos of the BTEC FPT Da Nang students and the children of Cha Val",
+    "video": "Video",
+    "video_desc": "The GÙI XUÂN LÊN BẢN charity campaign is a project initiated by the BTEC FPT Da Nang campus. The project aims to bring warmth and joy to the children in the highlands. The project has received a lot of support from the community, especially from the BTEC FPT Da Nang campus. The project has received a lot of support from the community, especially from the BTEC FPT Da Nang campus.",
+    "footer_title": "BTEC FPT British College - Da Nang Campus",
     "footer_add": "66 Vo Van Tan, Thanh Khe District, Da Nang City",
-    "copyright": "Copyright ©2022 by BITC. All Rights Reserved."
+    "copyright": "©2023 BTEC FPT DN - BITC. All rights reserved."
   }
 }

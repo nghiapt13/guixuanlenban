@@ -46,7 +46,7 @@ function Video({ id }) {
                         py: 3,
                         fontFamily: 'Montserrat',
                         height: '100px',
-                        fontSize: { xs: '35px', md: '41px' },
+                        fontSize: { xs: '28px', md: '41px' },
                         color: 'var(--primary)',
                     }}
                 >
@@ -57,6 +57,7 @@ function Video({ id }) {
                     sx={{
                         textAlign: 'justify',
                         lineHeight: 2,
+                        fontSize: { xs: '14px' },
                     }}
                     data-aos="fade-up"
                     data-aos-delay="500"

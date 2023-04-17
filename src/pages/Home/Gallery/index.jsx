@@ -27,7 +27,6 @@ function Thuvien({ id }) {
             // disableGutters={true}
             sx={{
                 display: 'grid',
-                justifyContent: 'center', alignItems: 'center',
                 gridTemplateColumns: {
                     xs: 'repeat(1, 1fr)',
                     lg: 'repeat(2, 1fr)',
@@ -37,18 +36,11 @@ function Thuvien({ id }) {
             }}
         >
             {/* LEFT */}
-            <MyBox data-aos="fade-up"
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    // height: '100vh',
-                }}>
+            <MyBox data-aos="fade-up">
                 {/* <Typography
-          variant="span"
-          sx={{ textTransform: 'uppercase', color: 'orange' }}
-        ></Typography> */}
+            variant="span"
+            sx={{ textTransform: 'uppercase', color: 'orange' }}
+          ></Typography> */}
                 <Typography
                     variant="h3"
                     component="h5"
@@ -57,9 +49,10 @@ function Thuvien({ id }) {
                         fontFamily: 'Montserrat',
                         height: '100px',
                         fontSize: { xs: '35px', md: '41px' },
-                        textAlign: 'center',
                         color: 'var(--primary)',
                     }}
+                    data-aos="fade-up"
+                    data-aos-delay="500"
                 >
                     {t('content.gallery')}
                 </Typography>
@@ -76,11 +69,7 @@ function Thuvien({ id }) {
                 </Typography>
 
                 <Link to="/gallery">
-                    <button
-                        className={cx('learn-more')}
-                        data-aos="fade-up"
-                        data-aos-delay="500"
-                    >
+                    <button className={cx('learn-more')}>
                         <span className={cx('circle')} aria-hidden="true">
                             <span className={cx('icon')}>
                                 <i className="fa-solid fa-angle-right"></i>
@@ -92,7 +81,6 @@ function Thuvien({ id }) {
                     </button>
                 </Link>
             </MyBox>
-
             {/* RIGHT */}
             <Box
                 data-aos="fade-up"
@@ -101,13 +89,13 @@ function Thuvien({ id }) {
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    height: '100vh',
+                    height:{xs: '300px', md: '100vh'},
                 }}
             >
                 <Image src={images.gallery} alt="" className={cx('about__image')} />
                 {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
             </Box>
-        </Container>
+        </Container >
     );
 }
 Thuvien.propTypes = {};

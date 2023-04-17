@@ -55,7 +55,7 @@ export default function Place({ id }) {
       gap: 20,
     },
     [theme.breakpoints.up('sm')]: {
-      gridTemplateColumns: 'repeat(2, 1fr)',
+      gridTemplateColumns: 'repeat(5, 1fr)',
     },
     [theme.breakpoints.up('lg')]: {
       gridTemplateColumns: 'repeat(5, 1fr)',

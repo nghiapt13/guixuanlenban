@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .galleryWrap {
     display: flex;
@@ -56,11 +56,11 @@
 }
 
 .title__h1{
-    color: #d32f2fd6;
+    color: #3ec7f1;
     font-size: 3rem;
     font-weight: 100;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Montserrat', sans-serif;
     /* align-items: c; */
     margin-bottom: 30px;
 }
