@@ -64,6 +64,11 @@ const contributorData = [
     imageUrl: images.katkunstLogo1,
     pageLink: 'https://www.facebook.com/KatKunstbtec',
   },
+  {
+    title: '',
+    imageUrl: images.bdaLogo,
+    pageLink: 'https://www.facebook.com/profile.php?id=100086902532163',
+  }
 ];
 
 function Home(props) {

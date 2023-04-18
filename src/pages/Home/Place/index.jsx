@@ -50,6 +50,7 @@ export default function Place({ id }) {
   const Left = styled(Box)(({ theme }) => ({
     flex: 3,
     display: 'grid',
+    justifySelf: 'end',
     [theme.breakpoints.up('xs')]: {
       gridTemplateColumns: 'repeat(1, 1fr)',
       gap: 20,
@@ -98,6 +99,23 @@ export default function Place({ id }) {
         >
           {t('content.places2')}
         </Typography>
+        <Wrapper>
+          <Typography
+            variant="p"
+            sx={{
+              textAlign: { md: 'justify' },
+              alignItems: { xs: 'center', },
+              lineHeight: { xs: '2', md: '2' },
+              // pt: { md: 15, sm: 10, xs: 5 },
+              gap: { xs: 3, lg: 0 },
+            }}
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            {t('content.places__desc')}
+          </Typography>
+        </Wrapper>
+
         <Wrapper data-aos="fade-up">
           {/* left */}
           <Left>

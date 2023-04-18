@@ -57,7 +57,7 @@ function Video({ id }) {
                     sx={{
                         textAlign: 'justify',
                         lineHeight: 2,
-                        fontSize: { xs: '14px' },
+                        // fontSize: { xs: '14px' },
                     }}
                     data-aos="fade-up"
                     data-aos-delay="500"

@@ -10,6 +10,7 @@ const images = {
   chuaLogo: require('./logos/logo-chua.png'),
   glxbLogo: require('./logos/glxb.png'),
   btecglxbLogo: require('./logos/btecglxb.png'),
+  bdaLogo: require('./logos/bda.jpg'),
   // About
   about: require('./about/about.jpg'),
   brush: require('./about/brush.png'),

@@ -1,6 +1,3 @@
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import { Box, Container, Grid, styled, Typography } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import React from 'react';
@@ -124,7 +121,7 @@ function Footer({ pages }) {
                 </Typography>
               </Grid>
               {/* PAGES */}
-              <Grid
+              {/* <Grid
                 // data-aos="fade-up"
                 data-delay="500"
                 sx={{
@@ -159,9 +156,9 @@ function Footer({ pages }) {
                     </MyTypography>
                   );
                 })}
-              </Grid>
+              </Grid> */}
               {/* SOCIALS */}
-              <Grid
+              {/* <Grid
                 // data-aos="fade-up"
                 data-delay="500"
                 sx={{
@@ -200,7 +197,7 @@ function Footer({ pages }) {
                     },
                   }}
                 ></TwitterIcon>
-              </Grid>
+              </Grid> */}
               {/* Nonprofits */}
               <Grid
                 // data-aos="fade-up"

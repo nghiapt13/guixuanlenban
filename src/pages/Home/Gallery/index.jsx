@@ -1,6 +1,6 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import { Box, Container, Paper, styled, Typography } from '@mui/material';
+import { Box, Container, styled, Typography } from '@mui/material';
 import classNames from 'classnames/bind';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
@@ -68,8 +68,12 @@ function Thuvien({ id }) {
                     {t('content.gallery_desc')}
                 </Typography>
 
+                
                 <Link to="/gallery">
-                    <button className={cx('learn-more')}>
+                    <button
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    className={cx('learn-more')}>
                         <span className={cx('circle')} aria-hidden="true">
                             <span className={cx('icon')}>
                                 <i className="fa-solid fa-angle-right"></i>
@@ -90,6 +94,7 @@ function Thuvien({ id }) {
                     alignItems: 'center',
                     justifyContent: 'center',
                     height:{xs: '300px', md: '100vh'},
+                    // width:{xs: '300px', md: '100px'}
                 }}
             >
                 <Image src={images.gallery} alt="" className={cx('about__image')} />

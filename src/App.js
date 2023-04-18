@@ -31,7 +31,7 @@ function App() {
       duration: 2000,
       delay: 200,
       // once: true,
-      once: false,
+      once: true,
     });
   }, []);
   // Set up ảnh cho gallery
