@@ -49,7 +49,7 @@ function Footer({ pages }) {
   const { t } = useTranslation();
 
   return (
-    <Wrapper data-aos="fade-up" data-aos-duration="4000">
+    <Wrapper>
       <Container maxWidth="xl">
         <Box>
           <Box>

@@ -34,7 +34,7 @@ function About({ id }) {
       }}
     >
       {/* LEFT */}
-      <MyBox data-aos="fade-up">
+      <MyBox>
         {/* <Typography
           variant="span"
           sx={{ textTransform: 'uppercase', color: 'orange' }}
@@ -61,35 +61,14 @@ function About({ id }) {
             // pt: { md: 15, sm: 10, xs: 5 },
             gap: { xs: 3, lg: 0 },
           }}
-          data-aos="fade-up"
-          data-aos-delay="500"
         >
           {t('content.about_us_desc')}
         </Typography>
 
-        <a
-          href="https://www.facebook.com/GuiXuanLenBan/posts/pfbid02ucnmF7BrdmLythGDVjm4jNtVNJAuxkvMVnnrpwH8cUsv9tKMED5kdvbDbJu9TWm6l"
-          target="_blank"
-          rel="noreferrer"
-          data-aos="fade-up"
-          data-aos-delay="500"
-        >
-          <button className={cx('learn-more')}>
-            <span className={cx('circle')} aria-hidden="true">
-              <span className={cx('icon')}>
-                <i className="fa-solid fa-angle-right"></i>
-              </span>
-            </span>
-            <span className={cx('button-text')}>
-              {t('content.btn_about_us')}
-            </span>
-          </button>
-        </a>
       </MyBox>
 
       {/* RIGHT */}
       <Box
-        data-aos="fade-up"
         sx={{
           display: 'flex',
           flexDirection: 'column',

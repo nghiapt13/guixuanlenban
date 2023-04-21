@@ -29,12 +29,12 @@ function Video({ id }) {
                     xs: 'repeat(1, 1fr)',
                     lg: 'repeat(2, 1fr)',
                 },
-                pt: { md: 15, sm: 10, xs: 5 },
+                pt: { md: 0, sm: 10, xs: 5 },
                 gap: { xs: 3, lg: 0 },
             }}
         >
             {/* LEFT */}
-            <MyBox data-aos="fade-up">
+            <MyBox>
                 {/* <Typography
           variant="span"
           sx={{ textTransform: 'uppercase', color: 'orange' }}
@@ -57,10 +57,9 @@ function Video({ id }) {
                     sx={{
                         textAlign: 'justify',
                         lineHeight: 2,
+                        height: '100px',
                         // fontSize: { xs: '14px' },
                     }}
-                    data-aos="fade-up"
-                    data-aos-delay="500"
                 >
                     {t('content.video__desc')}
                 </Typography>
@@ -68,7 +67,7 @@ function Video({ id }) {
 
             {/* RIGHT */}
             <Box
-                data-aos="fade-up"
+                
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',

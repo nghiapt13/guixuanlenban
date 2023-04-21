@@ -127,7 +127,7 @@ function Header({ pages, id }) {
             onClose={toggleSlider}
             pages={pages}
             hash={hash}
-            // onClick={handleCloseNavMenu}
+          // onClick={handleCloseNavMenu}
           />
 
           {/* LOGO ON MOBILE */}
@@ -157,7 +157,7 @@ function Header({ pages, id }) {
               sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center' }}
             >
               {/* PHONE */}
-              <a href="tel:0988520893">
+              {/* <a href="tel:0988520893">
                 <IconButton
                   sx={{
                     p: {
@@ -168,7 +168,7 @@ function Header({ pages, id }) {
                 >
                   <FontAwesomeIcon icon={faPhone} className={cx('icon')} />
                 </IconButton>
-              </a>
+              </a> */}
               {/* <Typography
                 variant="h6"
                 noWrap
@@ -191,12 +191,12 @@ function Header({ pages, id }) {
               {/* <Darkmode /> */}
               {/* LANGUAGE TRANSLATION */}
               {/* <Button type='submit' onClick={changeLang}>Tiếng việt</Button> */}
-              <LanguageMenu onClick={changeLang} />
+              {/* <LanguageMenu onClick={changeLang} /> */}
             </Box>
 
             <Button
-              href="https://thiennguyen.app/user/hominhthanh1"
-              target="_blank"
+              href="#"
+              // target="_blank"
               variant="outlined"
               color="inherit"
               cursor="not-allowed"
@@ -210,10 +210,13 @@ function Header({ pages, id }) {
                   background: 'var(--primary)',
                   color: '#fff',
                 },
+                cursor:"not-allowed",
+                // pointerEvents: 'none', // Add pointer-events here
               }}
             >
               {t('content.btn_donation')}
             </Button>
+
 
             {/* RESPONSIVE ON MOBILE */}
             <Button

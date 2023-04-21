@@ -95,7 +95,6 @@ export default function Place({ id }) {
             fontSize: { xs: '35px', md: '41px' },
             color: 'var(--primary)',
           }}
-          data-aos="fade-up"
         >
           {t('content.places2')}
         </Typography>
@@ -109,22 +108,20 @@ export default function Place({ id }) {
               // pt: { md: 15, sm: 10, xs: 5 },
               gap: { xs: 3, lg: 0 },
             }}
-            data-aos="fade-up"
-            data-aos-delay="500"
           >
             {t('content.places__desc')}
           </Typography>
         </Wrapper>
 
-        <Wrapper data-aos="fade-up">
+        <Wrapper >
           {/* left */}
           <Left>
             {schoolData.map((item, index) => (
               <Box
                 key={index}
                 className={cx('place')}
-                data-aos="zoom-in"
-                data-aos-delay="500"
+                // data-aos="zoom-in"
+                // data-aos-delay="500"
               >
                 <SchoolName
                   variant="h4"

@@ -59,7 +59,6 @@ function Donor({ title, data }) {
         <MyTypography
           variant="h5"
           component="h4"
-          data-aos="fade-up"
           sx={{ mb: 2 }}
         >
           {title}

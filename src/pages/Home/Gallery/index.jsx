@@ -31,12 +31,12 @@ function Thuvien({ id }) {
                     xs: 'repeat(1, 1fr)',
                     lg: 'repeat(2, 1fr)',
                 },
-                pt: { md: 15, sm: 10, xs: 5 },
+                pt: { md: 0, sm: 10, xs: 5 },
                 gap: { xs: 3, lg: 0 },
             }}
         >
             {/* LEFT */}
-            <MyBox data-aos="fade-up">
+            <MyBox >
                 {/* <Typography
             variant="span"
             sx={{ textTransform: 'uppercase', color: 'orange' }}
@@ -45,14 +45,12 @@ function Thuvien({ id }) {
                     variant="h3"
                     component="h5"
                     sx={{
-                        py: 3,
+                        py: 1,
                         fontFamily: 'Montserrat',
                         height: '100px',
                         fontSize: { xs: '35px', md: '41px' },
                         color: 'var(--primary)',
                     }}
-                    data-aos="fade-up"
-                    data-aos-delay="500"
                 >
                     {t('content.gallery')}
                 </Typography>
@@ -62,8 +60,6 @@ function Thuvien({ id }) {
                         textAlign: 'justify',
                         lineHeight: 2,
                     }}
-                    data-aos="fade-up"
-                    data-aos-delay="500"
                 >
                     {t('content.gallery_desc')}
                 </Typography>
@@ -71,8 +67,6 @@ function Thuvien({ id }) {
                 
                 <Link to="/gallery">
                     <button
-                    data-aos="fade-up"
-                    data-aos-delay="500"
                     className={cx('learn-more')}>
                         <span className={cx('circle')} aria-hidden="true">
                             <span className={cx('icon')}>
@@ -87,14 +81,15 @@ function Thuvien({ id }) {
             </MyBox>
             {/* RIGHT */}
             <Box
-                data-aos="fade-up"
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    height:{xs: '300px', md: '100vh'},
-                    // width:{xs: '300px', md: '100px'}
+                    // height:{xs: '300px', md: '100vh'},
+                    // width:{xs: '300px', md: '100vh'}
+                    height: '560px',
+                    width:'740px',
                 }}
             >
                 <Image src={images.gallery} alt="" className={cx('about__image')} />

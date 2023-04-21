@@ -32,7 +32,7 @@ export default function DonorList({ data }) {
               src={item.imageUrl}
               alt={item.title}
               className={cx('image')}
-              data-aos="fade-up"
+              // data-aos="fade-up"
             />
             {/* <Typography
       {data.map((item, index) => (
