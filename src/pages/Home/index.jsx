@@ -13,6 +13,7 @@ import styles from './Home.module.scss';
 import Place from './Place';
 import Gallery from './Gallery';
 import Video from './Video';
+
 // import Wish from './Wish';
 const cx = classNames.bind(styles);
 // DONOR, Organization, contributor data
@@ -70,6 +71,7 @@ const contributorData = [
     pageLink: 'https://www.facebook.com/profile.php?id=100086902532163',
   }
 ];
+
 
 function Home(props) {
   const { t } = useTranslation();

@@ -58,7 +58,7 @@ function About({ id }) {
             textAlign: { md: 'justify' },
             alignItems: { xs: 'center', },
             lineHeight: { xs: '2', md: '2' },
-            // pt: { md: 15, sm: 10, xs: 5 },
+            // fontSize:{xs:'15px'},
             gap: { xs: 3, lg: 0 },
           }}
         >

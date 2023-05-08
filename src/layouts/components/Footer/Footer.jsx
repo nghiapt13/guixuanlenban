@@ -113,11 +113,24 @@ function Footer({ pages }) {
                   component="p"
                   sx={{
                     width: { xs: '100%' },
+                    marginBottom: '15px',
                     opacity: '0.7',
                     fontSize: '13px',
                   }}
                 >
                   {t('content.footer_add')}
+                </Typography>
+                <Typography
+                  variant="span"
+                  component="p"
+                  sx={{
+                    width: { xs: '100%' },
+
+                    opacity: '0.7',
+                    fontSize: '13px',
+                  }}
+                >
+                  {t('content.donate__detail')}
                 </Typography>
               </Grid>
               {/* PAGES */}
@@ -207,7 +220,7 @@ function Footer({ pages }) {
                 }}
               >
                 <iframe
-                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGuiXuanLenBan%2Fposts%2Fpfbid02MQhcTdkKSY4CxVjSQadau6pviks6LrBbPeJBooPiwLvAAj6hJhyG5fmTB2SaJunQl&width=400&show_text=false&height=268&appId"
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGuiXuanLenBan%2Fposts%2Fpfbid0Upj5JMr412FCoKLr3PaqNeNvXxkDgWfuebaHGesS1ELYMn81qTKj6yLUBZyUu6y3l&width=400&show_text=false&height=368&appId"
                   // width="100%"
                   id="fanpage"
                   title='fanpage'
@@ -219,6 +232,15 @@ function Footer({ pages }) {
                   allowFullScreen={true}
                   allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 ></iframe>
+                {/* <iframe 
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGuiXuanLenBan%2Fposts%2F1130245280992167%3A1130245280992167&width=300&show_text=false&height=168&appId"  
+                height="100%" 
+                style={{border:'none',overflow:'hidden'}}
+                scrolling="no" 
+                frameborder={0} 
+                allowfullscreen={true}
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe> */}
               </Grid>
             </Grid>
           </Box>
