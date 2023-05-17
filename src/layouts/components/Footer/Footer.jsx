@@ -220,12 +220,14 @@ function Footer({ pages }) {
                 }}
               >
                 <iframe
-                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGuiXuanLenBan%2Fposts%2Fpfbid0Upj5JMr412FCoKLr3PaqNeNvXxkDgWfuebaHGesS1ELYMn81qTKj6yLUBZyUu6y3l&width=400&show_text=false&height=368&appId"
+                  src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGuiXuanLenBan%2Fposts%2Fpfbid0Upj5JMr412FCoKLr3PaqNeNvXxkDgWfuebaHGesS1ELYMn81qTKj6yLUBZyUu6y3l&width=400&show_text=false&height=258&appId"
                   // width="100%"
                   id="fanpage"
                   title='fanpage'
                   name="fanpage"
                   height="100%"
+                  width="400px"
+                  height="258px"
                   style={{ border: 'none', overflow: 'hidden' }}
                   scrolling="no"
                   frameBorder={0}

@@ -31,7 +31,7 @@ function Thuvien({ id }) {
                     xs: 'repeat(1, 1fr)',
                     lg: 'repeat(2, 1fr)',
                 },
-                pt: { md: 0, sm: 10, xs: 5 },
+                pt: { md: 15, sm: 10, xs: 5 },
                 gap: { xs: 3, lg: 0 },
             }}
         >
@@ -48,7 +48,7 @@ function Thuvien({ id }) {
                         py: 1,
                         fontFamily: 'Montserrat',
                         height: '100px',
-                        fontSize: { xs: '35px', md: '41px' },
+                        fontSize: { xs: '30px', md: '41px' },
                         color: 'var(--primary)',
                     }}
                 >
@@ -58,16 +58,21 @@ function Thuvien({ id }) {
                     variant="p"
                     sx={{
                         textAlign: 'justify',
-                        lineHeight: 2,
+                        alignItems: 'center',
+                        lineHeight: { xs: '2', md: '2' },
+                        fontSize: { xs: '15px', md: '15px' },
+                        paddingRight: { xs: '23rem', md: '0px' },
+                        paddingLeft: { xs: '1px' },
+                        gap: { xs: 3, lg: 0 },
                     }}
                 >
                     {t('content.gallery_desc')}
                 </Typography>
 
-                
+
                 <Link to="/gallery">
                     <button
-                    className={cx('learn-more')}>
+                        className={cx('learn-more')}>
                         <span className={cx('circle')} aria-hidden="true">
                             <span className={cx('icon')}>
                                 <i className="fa-solid fa-angle-right"></i>
@@ -89,10 +94,14 @@ function Thuvien({ id }) {
                     // height:{xs: '300px', md: '100vh'},
                     // width:{xs: '300px', md: '100vh'}
                     height: '560px',
-                    width:'740px',
+                    width: '740px',
                 }}
             >
-                <Image src={images.gallery} alt="" className={cx('about__image')} />
+                <Image
+                    src={images.gallery}
+                    alt=""
+                    className={cx('about__image')} />
+                    {/* sx{{  }} */}
                 {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
             </Box>
         </Container >

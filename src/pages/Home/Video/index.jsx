@@ -29,7 +29,7 @@ function Video({ id }) {
                     xs: 'repeat(1, 1fr)',
                     lg: 'repeat(2, 1fr)',
                 },
-                pt: { md: 0, sm: 10, xs: 5 },
+                pt: { md: 15, sm: 10, xs: 5 },
                 gap: { xs: 3, lg: 0 },
             }}
         >

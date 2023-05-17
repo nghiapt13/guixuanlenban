@@ -126,7 +126,7 @@ function GalleryHeader() {
                         variant="h5"
                         noWrap
                         component="a"
-                        href=""
+                        href="/"
                         sx={{
                             flexGrow: 1,
                             mr: 2,

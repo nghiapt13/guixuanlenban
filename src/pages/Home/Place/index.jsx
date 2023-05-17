@@ -92,7 +92,7 @@ export default function Place({ id }) {
             display: 'content',
             fontFamily: 'Montserrat',
             height: '100px',
-            fontSize: { xs: '35px', md: '41px' },
+            fontSize: { xs: '30px', md: '41px' },
             color: 'var(--primary)',
           }}
         >

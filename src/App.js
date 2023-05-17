@@ -11,6 +11,7 @@ import { useState, useEffect } from 'react';
 import SyncLoader from 'react-spinners/SyncLoader';
 import Gallery from './pages/gallery/Gallery';
 import GalleryLayout from './layouts/GalleryLayout';
+import index from './pages/Home/index';
 const override = {
   position: 'absolute',
   top: '50%',

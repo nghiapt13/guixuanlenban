@@ -46,7 +46,7 @@ function About({ id }) {
             py: 3,
             fontFamily: 'Montserrat',
             height: '100px',
-            fontSize: { xs: '22px', md: '41px' },
+            fontSize: { xs: '30px', md: '41px' },
             color: 'var(--primary)',
           }}
         >
@@ -55,15 +55,32 @@ function About({ id }) {
         <Typography
           variant="p"
           sx={{
+            // lineHeight: { xs: '2', md: '2' },
             textAlign: { md: 'justify' },
             alignItems: { xs: 'center', },
             lineHeight: { xs: '2', md: '2' },
-            // fontSize:{xs:'15px'},
-            gap: { xs: 3, lg: 0 },
+            fontSize:{xs:'15px',md:'15px'},
+            paddingRight: { xs: '280px',md:'0px' },
+            paddingLeft: { xs: '1px' },
+            gap: { xs: 3, lg: 0 }, 
           }}
         >
           {t('content.about_us_desc')}
         </Typography>
+        {/* <Typography
+          variant="p"
+          sx={{
+            textAlign: { xs: 'center', md: 'justify' }, // Center text on small screens, justify on medium screens and above
+            alignItems: 'center', // Center the text vertically
+            lineHeight: { xs: '2', md: '2' }, // Set the line height to 2 on all screens
+            fontSize: { xs: '14px', md: 'inherit' }, // Decrease font size on small screens, inherit on medium screens and above
+            gap: { xs: 2, lg: 0 }, // Reduce the gap between lines on small screens
+            maxWidth: '100%', // Ensure the text doesn't overflow the container
+          }}
+        >
+          {t('content.about_us_desc')}
+        </Typography> */}
+
 
       </MyBox>
 
@@ -72,7 +89,8 @@ function About({ id }) {
         sx={{
           display: 'flex',
           flexDirection: 'column',
-          size: { xs: '50%', md: '100%' },
+          size: { xs: '100%', md: '100%' },
+          width: { xs: '50%', md: '100%' },
           alignItems: { xs: 'center', md: 'flex-end' },
           position: 'relative',
 
