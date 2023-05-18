@@ -10,7 +10,7 @@ import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import { convertUrl } from '../../../hooks';
 import { useMediaQuery } from 'react-responsive';
-import './footer.css'
+import './footer.css';
 
 const cx = classNames.bind(styles);
 
@@ -221,8 +221,9 @@ function Footer({ pages }) {
                   paddingTop: '20px',
                   position: 'center',
                 }}
+                display={{ xs: 'none', md: 'block' }}
               >
-                <iframe
+                <iframe className='fanpage'
                   src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGuiXuanLenBan%2Fposts%2Fpfbid0Upj5JMr412FCoKLr3PaqNeNvXxkDgWfuebaHGesS1ELYMn81qTKj6yLUBZyUu6y3l&width=400&show_text=false&height=258&appId"
                   // width="100%"
                   id="fanpage"
