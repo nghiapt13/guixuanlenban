@@ -9,6 +9,8 @@ import Image from '../../../components/Image';
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import { convertUrl } from '../../../hooks';
+import { useMediaQuery } from 'react-responsive';
+import './footer.css'
 
 const cx = classNames.bind(styles);
 
@@ -214,9 +216,10 @@ function Footer({ pages }) {
               {/* Nonprofits */}
               <Grid
                 // data-aos="fade-up"
-                data-delay="500"
+                // data-delay="500"
                 sx={{
                   paddingTop: '20px',
+                  position: 'center',
                 }}
               >
                 <iframe
@@ -227,8 +230,8 @@ function Footer({ pages }) {
                   name="fanpage"
                   height="100%"
                   width="400px"
-                  height="258px"
-                  style={{ border: 'none', overflow: 'hidden' }}
+                  // height="258px"
+                  style={{ border: 'none', overflow: 'hidden', }}
                   scrolling="no"
                   frameBorder={0}
                   allowFullScreen={true}

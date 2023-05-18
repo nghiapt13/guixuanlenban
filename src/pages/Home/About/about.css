@@ -1,0 +1,9 @@
+/* add responsive for the iframe tag in mobile */
+@media (max-width: 768px) {
+    iframe {
+        max-width: 65%;
+        /* margin-right: 40px; */
+        /* move the iframe to the left */
+        margin-left: -40px; 
+    }
+}

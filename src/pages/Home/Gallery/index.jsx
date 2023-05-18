@@ -6,6 +6,7 @@ import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 // import language
 import { useTranslation } from 'react-i18next';
 
@@ -57,12 +58,13 @@ function Thuvien({ id }) {
                 <Typography
                     variant="p"
                     sx={{
-                        textAlign: 'justify',
-                        alignItems: 'center',
+                        // lineHeight: { xs: '2', md: '2' },
+                        textAlign: { md: 'justify' },
+                        alignItems: { xs: 'center', },
                         lineHeight: { xs: '2', md: '2' },
                         fontSize: { xs: '15px', md: '15px' },
-                        paddingRight: { xs: '23rem', md: '0px' },
-                        paddingLeft: { xs: '1px' },
+                        paddingRight: { xs: '10px', md: '30px' },
+                        paddingLeft: { xs: '5px' },
                         gap: { xs: 3, lg: 0 },
                     }}
                 >
@@ -94,14 +96,15 @@ function Thuvien({ id }) {
                     // height:{xs: '300px', md: '100vh'},
                     // width:{xs: '300px', md: '100vh'}
                     height: '560px',
-                    width: '740px',
+                    width: '100%',
+                    marginTop: '20px',
                 }}
             >
                 <Image
                     src={images.gallery}
                     alt=""
                     className={cx('about__image')} />
-                    {/* sx{{  }} */}
+                {/* sx{{  }} */}
                 {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
             </Box>
         </Container >

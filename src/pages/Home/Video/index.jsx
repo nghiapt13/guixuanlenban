@@ -5,6 +5,8 @@ import classNames from 'classnames/bind';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
+import ReactPlayer from 'react-player';
+import './video.css';
 // import language
 import { useTranslation } from 'react-i18next';
 
@@ -55,10 +57,14 @@ function Video({ id }) {
                 <Typography
                     variant="p"
                     sx={{
-                        textAlign: 'justify',
-                        lineHeight: 2,
-                        height: '100px',
-                        // fontSize: { xs: '14px' },
+                        // lineHeight: { xs: '2', md: '2' },
+                        textAlign: { md: 'justify' },
+                        alignItems: { xs: 'center', },
+                        lineHeight: { xs: '2', md: '2' },
+                        fontSize: { xs: '15px', md: '15px' },
+                        paddingRight: { xs: '300px', md: '30px' },
+                        paddingLeft: { xs: '10px' },
+                        gap: { xs: 3, lg: 0 },
                     }}
                 >
                     {t('content.video__desc')}
@@ -67,23 +73,20 @@ function Video({ id }) {
 
             {/* RIGHT */}
             <Box
-                
+
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    alignItems: 'flex-end',
+                    size: { xs: '100%', md: '100%' },
+                    // width: { xs: '50%', md: '100%' },
+                    alignItems: { xs: 'center', md: 'flex-end' },
+                    padding: { xs: '10px', md: '0px' },
                     position: 'relative',
                 }}
             >
-                <iframe
-                    width="660"
-                    height="415"
-                    src="https://www.youtube.com/embed/JaUzv3SmNBI"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
+                <ReactPlayer
+                    style={{ padding: '10px', margin: '10px' }}
+                    url={'https://www.youtube.com/embed/JaUzv3SmNBI'} />
                 {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
             </Box>
         </Container>

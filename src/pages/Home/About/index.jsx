@@ -5,8 +5,10 @@ import classNames from 'classnames/bind';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 import styles from '../Home.module.scss';
+import ReactPlayer from 'react-player';
 // import language
 import { useTranslation } from 'react-i18next';
+import './about.css';
 
 const cx = classNames.bind(styles);
 
@@ -60,7 +62,7 @@ function About({ id }) {
             alignItems: { xs: 'center', },
             lineHeight: { xs: '2', md: '2' },
             fontSize:{xs:'15px',md:'15px'},
-            paddingRight: { xs: '280px',md:'0px' },
+            paddingRight: { xs: '280px',md:'30px' },
             paddingLeft: { xs: '1px' },
             gap: { xs: 3, lg: 0 }, 
           }}
@@ -90,22 +92,27 @@ function About({ id }) {
           display: 'flex',
           flexDirection: 'column',
           size: { xs: '100%', md: '100%' },
-          width: { xs: '50%', md: '100%' },
+          // width: { xs: '50%', md: '100%' },
           alignItems: { xs: 'center', md: 'flex-end' },
+          padding: { xs: '10px', md: '0px' },
           position: 'relative',
 
         }}
       >
-        <iframe
+        {/* <iframe
           width="660"
           height="415"
+          style={{width:'100%'}}
           src="https://www.youtube.com/embed/IFVcRYMNxDc"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></iframe>
+        ></iframe> */}
         {/* <img src={images.icon1} alt="" className={cx('story-svg')} sx={{}} /> */}
+        <ReactPlayer
+        style={{padding:'10px',margin:'10px'}}
+        url={'https://www.youtube.com/embed/IFVcRYMNxDc'} />
       </Box>
     </Container>
   );
