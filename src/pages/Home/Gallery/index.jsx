@@ -51,6 +51,8 @@ function Thuvien({ id }) {
                         height: '100px',
                         fontSize: { xs: '30px', md: '41px' },
                         color: 'var(--primary)',
+                        marginTop: { xs: '40px', md: '0px' },
+                        marginBottom: { xs: '-50px', md: '0px' },
                     }}
                 >
                     {t('content.gallery')}
@@ -65,6 +67,7 @@ function Thuvien({ id }) {
                         fontSize: { xs: '15px', md: '15px' },
                         paddingRight: { xs: '10px', md: '30px' },
                         paddingLeft: { xs: '5px' },
+                        marginTop: { xs: '20px', md: '0px' },
                         gap: { xs: 3, lg: 0 },
                     }}
                 >
@@ -95,12 +98,16 @@ function Thuvien({ id }) {
                     justifyContent: 'center',
                     // height:{xs: '300px', md: '100vh'},
                     // width:{xs: '300px', md: '100vh'}
-                    height: '560px',
-                    width: '100%',
-                    marginTop: '20px',
+                    height:{xs:'100%',md:'375px'},
+                    width: {xs:'100%',md:'610px'},
+                    marginTop: {xs: '0px', md: '0px'},
                 }}
             >
                 <Image
+                    sx={{
+                        height: 'inherit',
+                        width: 'inherit',
+                    }}
                     src={images.gallery}
                     alt=""
                     className={cx('about__image')} />

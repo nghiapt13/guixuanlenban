@@ -1,5 +1,4 @@
-.wrapper {
-}
+.wrapper {}
 
 // Donor
 .image {
@@ -11,6 +10,7 @@
   align-items: center;
   cursor: pointer;
 }
+
 .donor {
   margin: 100px 0;
 }
@@ -19,6 +19,7 @@
 .timeline__icon {
   font-size: 80px;
 }
+
 // Reverse Content and Icon
 .timeline {
   direction: rtl;
@@ -37,10 +38,12 @@
   border-bottom: 80px solid transparent;
   border-left: 60px solid var(--primary);
 }
+
 .separateRight .right::after {
   transform: rotate(180deg);
   right: 571px;
 }
+
 @media screen and (max-width: 1500px) {
   .right::after {
     display: none;
@@ -51,9 +54,11 @@
   .timeline {
     direction: unset;
   }
+
   .right::after {
     display: none;
   }
+
   .separateRight .right::after {
     left: 0;
     right: unset;
@@ -66,7 +71,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .about__image {
-  width: 500px;
+  width: 550px;
   height: 450px;
   overflow: hidden;
   display: flex;
@@ -75,7 +80,9 @@
   align-items: center;
   object-fit: contain;
   filter: drop-shadow(8px -4px 10px gray);
+  margin-left: 13rem;
 }
+
 @media screen and (max-width: 1200px) {
   .about__image {
     margin-top: 30px;
@@ -83,10 +90,11 @@
     height: 550px;
   }
 }
+
 @media screen and (max-width: 600px) {
   .about__image {
     margin-top: 10px;
-
+    margin-left: 0rem;
     height: 350px;
   }
 }
@@ -101,32 +109,35 @@
 .quotes {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
+
   i {
     margin-left: 20px;
     color: var(--primary);
   }
 }
+
 @media screen and (max-width: 900px) {
   .about__brush {
     top: 25%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .about__brush {
     top: 30%;
   }
 }
+
 $bg: #f3f8fa;
 $white: #fff;
 $black: #282936;
 
-@mixin transition(
-  $property: all,
+@mixin transition($property: all,
   $duration: 0.45s,
-  $ease: cubic-bezier(0.65, 0, 0.076, 1)
-) {
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)) {
   transition: $property $duration $ease;
 }
+
 button {
   position: relative;
   display: inline-block;
@@ -139,10 +150,12 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
+
   &.learn-more {
     width: 12rem;
     height: auto;
     margin-top: 20px;
+
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
       position: relative;
@@ -152,15 +165,18 @@ button {
       height: 3rem;
       background: var(--primary);
       border-radius: 1.625rem;
+
       .icon {
         position: absolute;
         top: 0.85rem;
         right: 1.0625rem;
+
         i {
           font-size: 20px;
         }
       }
     }
+
     .button-text {
       @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
       position: absolute;
@@ -177,16 +193,20 @@ button {
       text-transform: uppercase;
     }
   }
+
   &:hover {
     .circle {
       width: 100%;
+
       .icon {
         right: 10.0625rem;
+
         i {
           color: $white;
         }
       }
     }
+
     .button-text {
       color: $white;
     }
@@ -199,6 +219,7 @@ button {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   // border: 6px solid var(--primary);
 }
+
 .image__item {
   width: 300px;
   // border: 6px solid var(--primary);
@@ -208,6 +229,7 @@ button {
   .donate__image {
     width: 80%;
   }
+
   .image__item {
     width: 100%;
   }
@@ -230,6 +252,7 @@ button {
     background: linear-gradient(to right, #fff, transparent);
   }
 }
+
 .wish__image--top {
   max-width: 400px;
   top: -40px;
@@ -251,14 +274,17 @@ button {
   filter: unset;
   transform: scale(1.1);
 }
+
 .place:hover .place__title {
   transform: translate(-50%, -50%) scale(2);
   opacity: 0;
 }
+
 .place__image {
   filter: grayscale(100%);
   transition: all 0.25s linear;
 }
+
 .place__title {
   transition: all 0.2s linear;
 }

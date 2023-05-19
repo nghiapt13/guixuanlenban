@@ -107,6 +107,7 @@ export default function Place({ id }) {
               lineHeight: { xs: '2', md: '2' },
               // pt: { md: 15, sm: 10, xs: 5 },
               gap: { xs: 3, lg: 0 },
+              marginBottom: { xs: '50px', md: 0 },
             }}
           >
             {t('content.places__desc')}

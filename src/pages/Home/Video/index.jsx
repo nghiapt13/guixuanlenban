@@ -63,7 +63,7 @@ function Video({ id }) {
                         lineHeight: { xs: '2', md: '2' },
                         fontSize: { xs: '15px', md: '15px' },
                         paddingRight: { xs: '300px', md: '30px' },
-                        paddingLeft: { xs: '10px' },
+                        paddingLeft: { xs: '5px', md: '0px' },
                         gap: { xs: 3, lg: 0 },
                     }}
                 >
