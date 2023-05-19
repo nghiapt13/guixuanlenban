@@ -33,6 +33,9 @@ const images = {
   donate: require('./donate.jpg'),
   donate1: require('./donate1.jpg'),
 
+  // QR Code
+  qrCode: require('./qr.jpg'),
+
   // SVG
   icon: require('./svg/icon.svg'),
   icon1: require('./svg/icon1.svg').default,

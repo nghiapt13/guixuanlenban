@@ -4,13 +4,16 @@ import React from 'react';
 import images from '../../../assets/images';
 import Image from '../../../components/Image';
 // import PropTypes from 'prop-types';
-
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
 // USING FOR SCSS MODULE
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import { convertUrl } from '../../../hooks';
 import { useMediaQuery } from 'react-responsive';
 import './footer.css';
+
 
 const cx = classNames.bind(styles);
 
@@ -60,6 +63,7 @@ function Footer({ pages }) {
               sx={{
                 display: { sm: 'grid', md: 'flex' },
                 justifyContent: 'space-between',
+                marginTop: '-50px',
                 gridTemplateColumns: {
                   xs: 'repeat(1, 1fr)',
                   sm: 'repeat(2, 1fr)',
@@ -136,11 +140,12 @@ function Footer({ pages }) {
                 </Typography>
               </Grid>
               {/* PAGES */}
-              {/* <Grid
+              <Grid
                 // data-aos="fade-up"
-                data-delay="500"
+                // data-delay="500"
                 sx={{
                   paddingTop: '20px',
+                  marginRight: {xs:'1rem',md:'7rem'},
                 }}
               >
                 <Typography
@@ -154,24 +159,12 @@ function Footer({ pages }) {
                     fontSize: '14px',
                   }}
                 >
-                  Main Menu
+                  Xem thông tin chi tiết thu chi tại: 
                 </Typography>
-
-                {pages.map((page, index) => {
-                  let hrefPage = `#${convertUrl(page)}`;
-
-                  return (
-                    <MyTypography
-                      href={hrefPage}
-                      key={index}
-                      variant="span"
-                      component="a"
-                    >
-                      {page}
-                    </MyTypography>
-                  );
-                })}
-              </Grid> */}
+                  <Image 
+                  src={images.qrCode}
+                  alt="" className={cx('qrCode')}></Image>
+              </Grid>
               {/* SOCIALS */}
               {/* <Grid
                 // data-aos="fade-up"

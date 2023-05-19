@@ -1,4 +1,15 @@
 .footer__image {
   max-width: 400px;
 }
+.qrCode{
+  max-width: 150px;
+  margin-left: 1.5rem;
+}
 
+@media screen and (max-width: 600px) {
+  .qrCode {
+    max-width: 150px;
+    margin-left: 7rem;
+    margin-bottom: 10px;
+  }
+}
